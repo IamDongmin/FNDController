@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Oct 17 13:02:38 2022
+# Process ID: 8464
+# Current directory: D:/verilog/FNDController
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26164 D:\verilog\FNDController\FNDController.xpr
+# Log file: D:/verilog/FNDController/vivado.log
+# Journal file: D:/verilog/FNDController\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/verilog/FNDController/FNDController.xpr
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_project' was cancelled
+open_project D:/verilog/FNDController/FNDController.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/real/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1057.918 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::infer_core -vendor xilinx.com -library user -taxonomy /UserIP D:/verilog/IP/FNDController
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/verilog/IP/FNDController/src/BCDtoFND_decoder.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/verilog/IP/FNDController/src/clock_divider.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/verilog/IP/FNDController/src/counter_fnd.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/verilog/IP/FNDController/src/decoder_2x4.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/verilog/IP/FNDController/src/digit_divider.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/verilog/IP/FNDController/src/FNDController.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/verilog/IP/FNDController/src/mux_4x1.v:]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'i_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'i_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'i_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'i_reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'i_clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+WARNING: [IP_Flow 19-5661] Bus Interface 'i_clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::edit_ip_in_project -upgrade true -name edit_ip_project -directory D:/verilog/FNDController/FNDController.tmp d:/verilog/IP/FNDController/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/real/Vivado/2020.1/data/ip'.
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1057.918 ; gain = 0.000
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/verilog/IP/FNDController/src/BCDtoFND_decoder.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/verilog/IP/FNDController/src/FNDController.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/verilog/IP/FNDController/src/clock_divider.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/verilog/IP/FNDController/src/counter_fnd.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/verilog/IP/FNDController/src/decoder_2x4.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/verilog/IP/FNDController/src/digit_divider.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/verilog/IP/FNDController/src/mux_4x1.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1057.918 ; gain = 0.000
+ipx::current_core d:/verilog/IP/FNDController/component.xml
+update_compile_order -fileset sources_1
+ipx::unload_core d:/verilog/IP/FNDController/component.xml
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 17 13:18:40 2022...
